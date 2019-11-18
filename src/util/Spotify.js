@@ -1,9 +1,11 @@
 require('dotenv').config();
 
-const clientId = process.env.CLIENT_ID;
+const clientId = `${process.env.REACT_APP_CLIENT_ID}`;
 const redirectURI = "http://localhost:3000/";
 
 let accessToken;
+
+console.log(process.env.CLIENT_ID)
 
 const Spotify = {
   getAccessToken() {

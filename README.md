@@ -1,3 +1,5 @@
+# Jammming React App
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
@@ -66,3 +68,54 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/de
 ### `npm run build` fails to minify
 
 This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+
+### **App Description:**
+Jammming is a React application that allows users to search for songs, artists, or albums. Users can then easily create customized playlists and push those playlists to their Spotify account for future enjoyment. All components of this single page application are dynamically updated using React JS. The app utilizes Spotify API in order to return search results pertaining to their queries typed into the search field. The app makes it simple to dynamically add/remove songs to a custom playlist with the click of a button. The playlist name can also be customized to the user's preference. Once a custom playlist is completed, the user can simply press the 'add to Spotify' button and push that playlist to their actual Spotify account. Users must have an active account with Spotify in order to use this app.   
+<br>
+_____
+
+### **Instructions for Using API**
+* User must register for a client_id through spotify (https://developer.spotify.com/dashboard/login)
+* Open root directory of project in terminal and run: "npm install dotenv" and confirm it is added to package.json file as a dependency.
+* Create a .env file in the projects root directory
+* In .env file, enter your Client_Id prepended with "REACT_APP_", 
+    example: REACT_APP_CLIENT_ID=ENTER_YOUR_CLIENT_ID_HERE
+* remember to add your ".env" file to a .gitignore file if committing project to GitHub!
+* Must make a reference in your file where the ClientId is defined/used. At the top of the file 
+    type: require('dotenv').config();
+* Set your ClientId variable to a template literal, 
+    example: const Client_Id = `${process.env.REACT_APP_CLIENT_ID}`
+* See file named '.env_sample' for reference
+<br>
+_____
+
+### **Demo Screenshots**
+##### Jammming
+* The Landing Page!
+![Image of the app](./landingPage.png)
+<br>
+
+* Search Results for artists, songs, or albums!
+![Image of the app](./searchResults.png)
+<br>
+
+* Add Customized Playlists to Your Spotify Account!
+![Image of the app](./addPlaylist.png)
+<br>
+_________
+
+### **Core Technologies Used**
+* HTML5
+* CSS
+* Google Fonts
+* JavaScript
+* React JS
+* JQuery
+* AJAX
+* XML/JSX
+* Spotify API
+<br>
+_____
+
+### **Built With**
+* Visual Studio Code
